@@ -3,7 +3,11 @@ var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const ROOT_URI = 'http://localhost:8080'; // No end '/' please
+
+var path_server =(process.env.PATH_SERVER == undefined ? 'localhost' : process.env.PATH_SERVER);
+console.log(path_server);
+
+const ROOT_URI = 'http://' + path_server + ':8080'; // No end '/' please
 
 module.exports = {
   entry: {
