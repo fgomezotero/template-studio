@@ -1,25 +1,11 @@
-# Accord Project Template Studio
+# Accord Project Template Studio in Openshift
 
 A simple Web-based editor for Accord Project templates.
 
 <img src="https://raw.githubusercontent.com/accordproject/template-studio/master/studio.png" width="350">
 
-# For template authors
+Para ejecutar Accord Template Studio en Openshift es necesario utilizar la siguiente imagen que está pública en : https://hub.docker.com
 
-The Accord Project Template Studio is live at https://studio.accordproject.org
+fgomezotero/accord-studio:openshift.0.1 y añadir una varaible de entorno PATH_SERVER con el nombre completo de la ruta que vás a crear para acceder a la aplicación.
 
-# For contributors
-
-The template studio is a work in progress and we are very interested to hear from you. Let us know what you like or don't like about the template studio, report bugs or suggest new features by opening a GitHub issue.
-
-## Install and run locally
-
-You can run the template studio on your machine by doing:
-
-```
-npm install
-npm run start
-```
-
-Go to http://localhost:8080
-
+Espero les sea de ayuda!
