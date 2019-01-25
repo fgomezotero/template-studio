@@ -3,10 +3,11 @@ var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-
+//Accedemos a la variable de entorno PATH_SERVER 
 var path_server =(process.env.PATH_SERVER == undefined ? 'localhost' : process.env.PATH_SERVER);
 console.log(path_server);
 
+//Se construye la url para acceder a las opciones internas de los motores de accord.
 const ROOT_URI = 'http://' + path_server + ':8080'; // No end '/' please
 
 module.exports = {
