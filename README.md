@@ -4,10 +4,10 @@ A simple Web-based editor for Accord Project templates.
 
 <img src="https://raw.githubusercontent.com/accordproject/template-studio/master/studio.png" width="350">
 
-Para ejecutar Accord Template Studio en Openshift es necesario utilizar la siguiente imagen:
+To execute Accord Template Studio in Redhat Openshift Container Platform it is necessary to use the following image:
 ```
 docker pull fgomezotero/accord-studio:openshift.0.1
 ```
-La misma se encuentra publicada https://hub.docker.com y es no olvidar añadir una varaible de entorno PATH_SERVER con el nombre completo de la ruta que vás a crear para acceder a la aplicación.
+It is published in https://hub.docker.com and it is important not to forget to add a PATH_SERVER environment variable with the full name of the route you are going to create to access the application.
 
-Espero les sea de ayuda!
+I hope this helps you!
